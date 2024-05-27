@@ -12,6 +12,8 @@ The is_news_api_ready task checks if the News API is ready by making an HTTP req
 
 The extract_news_data task extracts news data from the News API.
 
+The transform_load_news_data performs data transformation and loads the data into a csv file within an S3 bucket.
+
 
 # Requirments
 
