@@ -1,6 +1,10 @@
 # Data-Engineering-Project-AirlowAWSNewsData
 
-The aim of this project is to demonstrate calling an API from newsapi.org and loading the data received into an S3 bucket within AWS. Apache Airflow was run on a virtual environment within an EC2 instance.
+The aim of this project is to demonstrate calling an API from newsapi.org and loading the data as a csv file into an S3 bucket within AWS. 
+
+Apache Airflow was run on a virtual environment within an EC2 instance.
+
+The DAG code can be found in the /dags folder.
 
 # Implemented DAG
 
@@ -12,7 +16,7 @@ The is_news_api_ready task checks if the News API is ready by making an HTTP req
 
 The extract_news_data task extracts news data from the News API.
 
-The transform_load_news_data performs data transformation and loads the data into a csv file within an S3 bucket.
+The transform_load_news_data performs data transformation and loads the data (specifically the title and the source of each article) into a csv file within an S3 bucket.
 
 
 # Requirments
